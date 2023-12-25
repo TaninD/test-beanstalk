@@ -1,4 +1,3 @@
-commands:
-  01_install_requirements:
-    command: "pip install -r requirements.txt"
-    cwd: "/var/app/ondeck/app"
+container_commands:
+  01_install_python_packages:
+    command: "$PYTHONPATH/pip install --no-index --find-links -r ./requirements.txt"
