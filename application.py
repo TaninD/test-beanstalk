@@ -1,5 +1,4 @@
-from contorl import app
-import uvicorn
+from contorl import application
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=5000)
+    application.run(application, host="0.0.0.0", port=80)
