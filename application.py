@@ -7,3 +7,6 @@ application = FastAPI()
 def read_root():
     return {"Hello": "World"}
 
+if __name__ == "__mane__":
+    uvicorn.run(application, host="0.0.0.0", port=8000)
+
